@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Keep authenticated application routes out of crawl budgets.
+Disallow: /app/

@@ -1,0 +1,192 @@
+{
+  "auth": {
+    "login": {
+      "title": "Reanuda una sesion segura.",
+      "subtitle": "Acceder",
+      "description": "El backend mantiene tokens en cookies httpOnly firmadas. Este cliente solo consume estado autenticado.",
+      "submit": "Iniciar sesion",
+      "footerPrefix": "Nuevo por aqui?",
+      "footerLink": "Crea una cuenta",
+      "forgotPassword": "Olvidaste tu contrasena?",
+      "error": "No se pudo iniciar sesion"
+    },
+    "register": {
+      "title": "Comienza con un flujo de autenticacion limpio.",
+      "subtitle": "Registro",
+      "description": "El registro crea la cuenta y mantiene el primer acceso explicito, alineado al contrato backend.",
+      "alert": "Despues de crear tu cuenta, la app te redirige al acceso.",
+      "submit": "Crear cuenta",
+      "footerPrefix": "Ya estas registrado?",
+      "footerLink": "Inicia sesion aqui",
+      "error": "No se pudo crear la cuenta"
+    },
+    "forgotPassword": {
+      "title": "Recupera acceso de forma segura.",
+      "subtitle": "Recuperacion de contrasena",
+      "description": "Solicita instrucciones de recuperacion. La respuesta siempre es segura e idempotente.",
+      "submit": "Enviar instrucciones de recuperacion",
+      "success": "Se generaron instrucciones de recuperacion cuando la cuenta existe.",
+      "error": "No se pudo procesar la solicitud de recuperacion",
+      "backToLogin": "Volver a iniciar sesion"
+    },
+    "resetPassword": {
+      "title": "Define una nueva contrasena.",
+      "subtitle": "Restablecer contrasena",
+      "description": "Usa el token de un solo uso entregado por el backend y define una nueva clave.",
+      "tokenLabel": "Token de recuperacion",
+      "tokenPlaceholder": "tokenId.secret",
+      "newPasswordLabel": "Nueva contrasena",
+      "submit": "Restablecer contrasena",
+      "success": "La contrasena se restablecio correctamente.",
+      "error": "No se pudo restablecer la contrasena",
+      "backToLogin": "Volver a iniciar sesion"
+    },
+    "verifyEmail": {
+      "title": "Verifica tu correo.",
+      "subtitle": "Verificacion de email",
+      "description": "Usa tu token de verificacion de un solo uso para activar tu email.",
+      "tokenLabel": "Token de verificacion",
+      "tokenPlaceholder": "tokenId.secret",
+      "submit": "Verificar email",
+      "success": "Email verificado correctamente.",
+      "error": "No se pudo verificar el email",
+      "resendAction": "Reenviar instrucciones de verificacion",
+      "resendSuccess": "Se generaron instrucciones de verificacion.",
+      "resendError": "No se pudieron reenviar las instrucciones de verificacion",
+      "backToLogin": "Volver a iniciar sesion"
+    },
+    "changePassword": {
+      "title": "Rotar contrasena",
+      "description": "Cambiar la contrasena revoca sesiones activas y fuerza nueva autenticacion.",
+      "currentLabel": "Contrasena actual",
+      "newLabel": "Nueva contrasena",
+      "hint": "Cambiar la contrasena revoca todas las sesiones activas.",
+      "submit": "Actualizar contrasena",
+      "error": "No se pudo cambiar la contrasena"
+    },
+    "changeEmail": {
+      "title": "Cambiar email",
+      "description": "Actualizar el email requiere una nueva verificacion y puede invalidar sesiones activas.",
+      "label": "Nuevo email",
+      "placeholder": "tu@ejemplo.com",
+      "submit": "Actualizar email",
+      "success": "Email actualizado.",
+      "error": "No se pudo actualizar el email"
+    },
+    "sessions": {
+      "title": "Zona de riesgo: Sesiones",
+      "description": "Revoca de inmediato el acceso de todos los dispositivos activos, incluido este.",
+      "button": "Cerrar sesion en todos los dispositivos",
+      "confirm": "Si, cerrar todas mis sesiones",
+      "cancel": "Cancelar",
+      "error": "No se pudieron cerrar todas las sesiones"
+    },
+    "sessionsList": {
+      "title": "Sesiones activas",
+      "description": "Inspecciona sesiones activas y revoca dispositivos sospechosos.",
+      "loading": "Cargando sesiones",
+      "error": "No se pudieron cargar las sesiones activas",
+      "empty": "No se encontraron sesiones activas.",
+      "current": "Actual",
+      "revoke": "Revocar sesion",
+      "revokeCurrent": "Cerrar esta sesion",
+      "unknownDevice": "Dispositivo desconocido",
+      "unknownAgent": "Cliente desconocido",
+      "ip": "IP",
+      "lastActivity": "Ultima actividad",
+      "createdAt": "Creada",
+      "expiresAt": "Expira"
+    },
+    "fields": {
+      "email": "Correo electronico",
+      "password": "Contrasena",
+      "emailPlaceholder": "tu@ejemplo.com",
+      "passwordPlaceholder": "Al menos 8 caracteres",
+      "passwordHint": "El sistema requiere minimo 8 caracteres."
+    },
+    "validation": {
+      "email": "Ingresa un correo electronico valido",
+      "password": "La contrasena debe tener al menos 8 caracteres",
+      "passwordDifferent": "La nueva contrasena debe ser diferente a la actual"
+    }
+  },
+  "security": {
+    "subtitle": "Centro de seguridad",
+    "title": "Controles de seguridad de la cuenta",
+    "description": "Gestiona credenciales, verificacion y sesiones desde una sola superficie segura."
+  },
+  "nav": {
+    "dashboard": "Panel",
+    "security": "Seguridad",
+    "logout": "Salir",
+    "session": "Sesion",
+    "authArea": "Area autenticada"
+  },
+  "home": {
+    "title": "Autenticacion rapida, clara y bajo control.",
+    "subtitle": "Espacio de acceso preciso",
+    "kicker": "Identidad dark-first",
+    "description": "JetAuth unifica acceso, recuperacion, verificacion y seguridad de sesiones en un flujo refinado pensado para un producto real.",
+    "consoleLabel": "JetAuth Console",
+    "consoleDescription": "Acceso seguro, recuperacion y control de sesiones en una sola superficie refinada.",
+    "statusBadge": "Listo para acceso seguro",
+    "primaryAction": "Ir a la consola",
+    "loginAction": "Abrir acceso seguro",
+    "secondaryAction": "Crear cuenta",
+    "features": {
+      "cookies": {
+        "title": "Integridad de sesion",
+        "description": "Las sesiones basadas en cookies permanecen en el navegador mientras la UI mantiene el estado claro y predecible."
+      },
+      "recovery": {
+        "title": "Recuperacion sin friccion",
+        "description": "Los flujos de recuperacion y verificacion se mantienen fluidos, guiados y seguros de inicio a fin."
+      },
+      "ux": {
+        "title": "Seguridad operativa",
+        "description": "Credenciales, acceso por dispositivo y acciones sensibles siguen siendo legibles cuando la precision importa."
+      }
+    }
+  },
+  "dashboard": {
+    "loading": "Cargando panel",
+    "authenticated": "Autenticado",
+    "role": "Rol",
+    "admin": "Administrador",
+    "user": "Usuario",
+    "emptyTitle": "Sin sesion autenticada",
+    "emptyDescription": "Esta ruta espera una sesion autenticada por backend. Inicia sesion para continuar.",
+    "emptyAction": "Ir a iniciar sesion",
+    "cards": {
+      "refresh": {
+        "title": "Refresh activo",
+        "description": "Las peticiones protegidas reintentan una vez despues de rotar la sesion via refresh."
+      },
+      "sessions": {
+        "title": "Acceso basado en sesiones",
+        "description": "El backend valida sesiones activas y estado de revocacion antes de servir rutas protegidas."
+      },
+      "password": {
+        "title": "Invalidacion por clave",
+        "description": "Cambiar la contrasena limpia sesiones activas y te obliga a volver a autenticar."
+      }
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Pagina no encontrada",
+      "description": "Esta ruta no existe dentro del flujo actual del frontend de autenticacion.",
+      "action": "Volver al inicio"
+    },
+    "unauthorized": {
+      "title": "Sesion requerida",
+      "description": "Area protegida. Inicia sesion con una sesion valida para continuar.",
+      "action": "Ir a iniciar sesion"
+    }
+  },
+  "common": {
+    "error": "Algo salio mal",
+    "switchLanguage": "Cambiar idioma",
+    "loadingRoute": "Cargando ruta"
+  }
+}

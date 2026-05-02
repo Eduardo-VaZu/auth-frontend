@@ -1,0 +1,192 @@
+{
+  "auth": {
+    "login": {
+      "title": "Resume a secure session.",
+      "subtitle": "Sign in",
+      "description": "The backend keeps tokens in signed httpOnly cookies. This client only consumes authenticated user state.",
+      "submit": "Sign in",
+      "footerPrefix": "New here?",
+      "footerLink": "Create an account",
+      "forgotPassword": "Forgot your password?",
+      "error": "Unable to sign in"
+    },
+    "register": {
+      "title": "Start with a clean auth flow.",
+      "subtitle": "Register",
+      "description": "Registration creates the account and keeps the first login explicit, aligned with backend contracts.",
+      "alert": "After creating your account, the app redirects you to sign in.",
+      "submit": "Create account",
+      "footerPrefix": "Already registered?",
+      "footerLink": "Sign in here",
+      "error": "Unable to create the account"
+    },
+    "forgotPassword": {
+      "title": "Recover access securely.",
+      "subtitle": "Password recovery",
+      "description": "Request reset instructions. The response is always safe and idempotent.",
+      "submit": "Send recovery instructions",
+      "success": "Recovery instructions were generated when the account exists.",
+      "error": "Unable to process the recovery request",
+      "backToLogin": "Back to sign in"
+    },
+    "resetPassword": {
+      "title": "Set a new password.",
+      "subtitle": "Reset password",
+      "description": "Use the one-time token delivered by the backend and choose a new password.",
+      "tokenLabel": "Reset token",
+      "tokenPlaceholder": "tokenId.secret",
+      "newPasswordLabel": "New password",
+      "submit": "Reset password",
+      "success": "Password reset completed successfully.",
+      "error": "Unable to reset password",
+      "backToLogin": "Back to sign in"
+    },
+    "verifyEmail": {
+      "title": "Verify your email.",
+      "subtitle": "Email verification",
+      "description": "Use your one-time verification token to activate your email.",
+      "tokenLabel": "Verification token",
+      "tokenPlaceholder": "tokenId.secret",
+      "submit": "Verify email",
+      "success": "Email verified successfully.",
+      "error": "Unable to verify email",
+      "resendAction": "Resend verification instructions",
+      "resendSuccess": "Verification instructions generated.",
+      "resendError": "Unable to resend verification instructions",
+      "backToLogin": "Back to sign in"
+    },
+    "changePassword": {
+      "title": "Rotate password",
+      "description": "Changing your password revokes active sessions and forces new authentication.",
+      "currentLabel": "Current password",
+      "newLabel": "New password",
+      "hint": "Changing your password revokes all active sessions.",
+      "submit": "Update password",
+      "error": "Unable to change password"
+    },
+    "changeEmail": {
+      "title": "Change email",
+      "description": "Updating email requires a new verification cycle and may invalidate active sessions.",
+      "label": "New email",
+      "placeholder": "you@example.com",
+      "submit": "Update email",
+      "success": "Email updated.",
+      "error": "Unable to update email"
+    },
+    "sessions": {
+      "title": "Danger zone: Sessions",
+      "description": "Immediately revoke access for all active devices, including this one.",
+      "button": "Logout from all devices",
+      "confirm": "Yes, close all sessions",
+      "cancel": "Cancel",
+      "error": "Unable to close all sessions"
+    },
+    "sessionsList": {
+      "title": "Active sessions",
+      "description": "Inspect active sessions and revoke suspicious devices.",
+      "loading": "Loading sessions",
+      "error": "Unable to load active sessions",
+      "empty": "No active sessions were found.",
+      "current": "Current",
+      "revoke": "Revoke session",
+      "revokeCurrent": "Logout this session",
+      "unknownDevice": "Unknown device",
+      "unknownAgent": "Unknown client",
+      "ip": "IP",
+      "lastActivity": "Last activity",
+      "createdAt": "Created at",
+      "expiresAt": "Expires at"
+    },
+    "fields": {
+      "email": "Email",
+      "password": "Password",
+      "emailPlaceholder": "you@example.com",
+      "passwordPlaceholder": "At least 8 characters",
+      "passwordHint": "The system requires a minimum of 8 characters."
+    },
+    "validation": {
+      "email": "Enter a valid email address",
+      "password": "Password must contain at least 8 characters",
+      "passwordDifferent": "New password must be different from the current one"
+    }
+  },
+  "security": {
+    "subtitle": "Security center",
+    "title": "Account security controls",
+    "description": "Manage credentials, verification and sessions from one secure surface."
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "security": "Security",
+    "logout": "Logout",
+    "session": "Session",
+    "authArea": "Authenticated area"
+  },
+  "home": {
+    "title": "Authentication that feels fast, calm, and under control.",
+    "subtitle": "Precision auth workspace",
+    "kicker": "Dark-first identity",
+    "description": "JetAuth brings sign-in, recovery, verification, and session security into one refined flow built for product-grade access.",
+    "consoleLabel": "JetAuth Console",
+    "consoleDescription": "Secure entry, recovery, and session control in one refined surface.",
+    "statusBadge": "Ready for secure access",
+    "primaryAction": "Go to console",
+    "loginAction": "Open secure access",
+    "secondaryAction": "Create account",
+    "features": {
+      "cookies": {
+        "title": "Session integrity",
+        "description": "Cookie-backed sessions stay inside the browser while the UI keeps state clear and predictable."
+      },
+      "recovery": {
+        "title": "Recovery without friction",
+        "description": "Reset and verification flows stay fluid, guided, and safe from first step to completion."
+      },
+      "ux": {
+        "title": "Operational security",
+        "description": "Credentials, device access, and sensitive actions remain readable when precision matters."
+      }
+    }
+  },
+  "dashboard": {
+    "loading": "Loading dashboard",
+    "authenticated": "Authenticated",
+    "role": "Role",
+    "admin": "Administrator",
+    "user": "User",
+    "emptyTitle": "No authenticated session",
+    "emptyDescription": "This route expects a backend-authenticated session. Sign in again to continue.",
+    "emptyAction": "Go to sign in",
+    "cards": {
+      "refresh": {
+        "title": "Refresh-aware",
+        "description": "Protected fetches retry once after the backend refresh endpoint rotates the session."
+      },
+      "sessions": {
+        "title": "Session-backed access",
+        "description": "The backend validates active sessions and revocation state before serving protected routes."
+      },
+      "password": {
+        "title": "Password invalidation",
+        "description": "Changing the password clears all active sessions and sends the user back through login."
+      }
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page not found",
+      "description": "This route does not exist in the current authentication frontend flow.",
+      "action": "Back home"
+    },
+    "unauthorized": {
+      "title": "Session required",
+      "description": "Protected area. Sign in with a valid session to continue.",
+      "action": "Go to sign in"
+    }
+  },
+  "common": {
+    "error": "Something went wrong",
+    "switchLanguage": "Switch language",
+    "loadingRoute": "Loading route"
+  }
+}

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family:
+    'Manrope',
+    'Segoe UI',
+    sans-serif;
+  color: #F3F6FB;
+  background-color: #0B0D10;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: #F3F6FB;
+  background-color: #0B0D10;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  color: #F7F8FF;
+  background: #7C6CFF;
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes revealScale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+}
+
+@layer utilities {
+  .animate-rise-in {
+    animation: riseIn 520ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .animate-reveal-scale {
+    animation: revealScale 5s ease-in-out infinite;
+  }
+
+  .surface-1 {
+    @apply border border-border-subtle bg-surface shadow-panel;
+  }
+
+  .surface-2 {
+    @apply border border-border-strong bg-surface-2 shadow-panel-elevated;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-rise-in,
+  .animate-reveal-scale {
+    animation: none;
+  }
+}
